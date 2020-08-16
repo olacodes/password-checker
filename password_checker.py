@@ -29,7 +29,7 @@ def main(args):
     count = check_pawned(password)
     if count == 'error':
       print('An error occurred check your network connection')
-    if int(count) > 0:
+    elif int(count) > 0:
       print(f'The passord "{password}" has been pawned {count} times. May be you should try another password')
     elif int(count) == 0:
       print(f'This is a good password to use. Carry On !!!')
